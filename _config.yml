@@ -11,7 +11,8 @@ description: >
     What is the web? This is the web.
 baseurl: ""
 url: "https://thisistheweb.com"
-twitter_username: thisistheweb
+twitter_username: _thisistheweb
+permalink: "/:year/:month/:day/:title"
 
 # Build settings
 markdown: kramdown
