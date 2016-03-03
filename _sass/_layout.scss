@@ -2,30 +2,32 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
+    text-align: center;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-title {
-    font-size: 26px;
-    font-weight: 300;
-    line-height: 56px;
-    letter-spacing: -1px;
+    font-size: 4rem;
+    @include media-query($on-palm) {
+        font-size: 2rem;
+    }
+    font-weight: bold;
     margin-bottom: 0;
-    float: left;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 
-    &,
-    &:visited {
-        color: $grey-color-dark;
+    &, &:visited {
+        color: $brand-color;
+    }
+    &:hover {
+        text-decoration: none;
     }
 }
 
 .site-nav {
-    float: right;
     line-height: 56px;
 
     .menu-icon {
@@ -240,3 +242,15 @@
         }
     }
 }
+
+hr.ellipsis {
+    border-top: none;
+    text-align: center;
+    border: 0; 
+    &:after {
+        content: '▪︎▪︎▪︎';
+        font-size: 48px;
+    }
+}
+
+
