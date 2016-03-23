@@ -13,6 +13,13 @@ baseurl: ""
 url: "https://thisistheweb.com"
 twitter_username: _thisistheweb
 permalink: "/:year/:month/:day/:title"
+authors:
+  andy:
+    display_name: "@vxhex"
+    url: "https://twitter.com/vxhex"
+  peter:
+    display_name: "@thelowlypeon"
+    url: "https://twitter.com/thelowlypeon"
 
 # Build settings
 markdown: kramdown
